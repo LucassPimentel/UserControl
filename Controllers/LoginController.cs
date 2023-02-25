@@ -20,6 +20,8 @@ namespace UserControl.Controllers
         [HttpPost]
         public IActionResult LoginUser(LoginRequest loginRequest)
         {
+            Console.WriteLine(loginRequest);
+
             var result = _loginService.LoginUser(loginRequest);
             return result.IsSuccess ? (Ok($"Logado com sucesso!\nToken: {result.Successes[0].Message}")) : (Unauthorized(result.Errors[0]));
         }
