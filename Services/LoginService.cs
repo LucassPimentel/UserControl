@@ -24,6 +24,8 @@ namespace UserControl.Services
         {
             var requestResult = _signInManager.PasswordSignInAsync(loginRequest.Username, loginRequest.Password, false, false);
 
+            Console.WriteLine(loginRequest);
+
             if (requestResult.Result.Succeeded)
             {
                 var identityUser = _signInManager
