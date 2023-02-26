@@ -7,7 +7,7 @@
 	  <UserSecretsId>22429fa6-44a5-466f-902a-771e03636b6f</UserSecretsId>
 	  <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
 	  <!--<DockerfileContext>..\FinanceControl</DockerfileContext>-->
-		<InvariantGlobalization>true</InvariantGlobalization>
+		<InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 
 

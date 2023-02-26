@@ -29,7 +29,7 @@ namespace UserControl.Context
                 SecurityStamp = Guid.NewGuid().ToString()
             };
 
-            admin.PasswordHash = hasher.HashPassword(admin,Environment.GetEnvironmentVariable("ADMIN_PASSWORD"));
+            admin.PasswordHash = hasher.HashPassword(admin, Environment.GetEnvironmentVariable("ADMIN_PASSWORD"));
 
             builder.Entity<CustomIdentityUser>().HasData(admin);
 
