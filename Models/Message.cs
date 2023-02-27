@@ -19,7 +19,7 @@ namespace UserControl.Models
 
 
 
-            Content = $"Seu link de ativação: {Environment.GetEnvironmentVariable("Application_URL")}/RegisterUser/ActivateUserAccount?UserId={userId}&ActivationCode={activationCode}";
+            Content = $"Seu link de ativação: https://{Environment.GetEnvironmentVariable("Application_URL")}/RegisterUser/ActivateUserAccount?UserId={userId}&ActivationCode={activationCode}";
         }
     }
 }
