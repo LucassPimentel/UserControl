@@ -11,11 +11,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddEnvironmentVariables();
 
-Console.WriteLine(Environment.GetEnvironmentVariable("SmtpServer"));
-Console.WriteLine(Environment.GetEnvironmentVariable("Port_Email"));
-Console.WriteLine(Environment.GetEnvironmentVariable("From"));
-Console.WriteLine(Environment.GetEnvironmentVariable("Password"));
-
 string connectionString = Environment.GetEnvironmentVariable("connString");
 
 builder.Services.AddDbContext<DataBaseContext>(opts =>
