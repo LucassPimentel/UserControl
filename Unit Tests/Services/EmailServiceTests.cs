@@ -13,14 +13,7 @@ namespace UserControl.Unit_Tests.Services
         EmailService emailService;
         public EmailServiceTests()
         {
-            var configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile($"appsettings.json")
-                .AddUserSecrets<Program>()
-                .Build();
-
-            emailService = new EmailService(configuration);
-
+            emailService = new EmailService();
         }
 
         [Fact]

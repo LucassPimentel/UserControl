@@ -11,15 +11,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddEnvironmentVariables();
 
-
-//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-//var port = Environment.GetEnvironmentVariable("PORT");
-
+Console.WriteLine(Environment.GetEnvironmentVariable("SmtpServer"));
+Console.WriteLine(Environment.GetEnvironmentVariable("Port_Email"));
+Console.WriteLine(Environment.GetEnvironmentVariable("From"));
+Console.WriteLine(Environment.GetEnvironmentVariable("Password"));
 
 string connectionString = Environment.GetEnvironmentVariable("connString");
-
-
-Console.WriteLine(connectionString);
 
 builder.Services.AddDbContext<DataBaseContext>(opts =>
 opts.UseSqlServer(connectionString));

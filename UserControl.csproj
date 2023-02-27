@@ -4,9 +4,7 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-	  <UserSecretsId>22429fa6-44a5-466f-902a-771e03636b6f</UserSecretsId>
 	  <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-	  <!--<DockerfileContext>..\FinanceControl</DockerfileContext>-->
 		<InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 

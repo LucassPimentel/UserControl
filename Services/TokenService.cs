@@ -20,7 +20,7 @@ namespace UserControl.Services
                 new Claim(ClaimTypes.DateOfBirth, user.BirthDate.ToString())
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("0asdjas09djsa09djasdjsadajsd09asjd09sajcnzxn"));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT")));
 
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VulmvnoUnz2YKE19APxuo4YL1MZ0t/4BAeimhT9/eXvC8Fs/EmoMzK/EvjzRbzM8PFvzUmd0ahI1o0zfb3WD3A==",
+  "dgSpecHash": "u1Ch8IdF1bMTEoPI10vCOwgzdmWmNPenIVX+CVJcecCgeS6nbXcnXYFyUpgFln5gM5L5qa1ZVIUz3earXGDyOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lupdsilva\\OneDrive - Simpress\\Área de Trabalho\\TestandoDeployUserControl\\UserControl.csproj",
+  "projectFilePath": "C:\\Users\\lupdsilva\\OneDrive - Simpress\\Área de Trabalho\\UserControl\\UserControl.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lupdsilva\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\lupdsilva\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

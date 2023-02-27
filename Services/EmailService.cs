@@ -8,13 +8,6 @@ namespace UserControl.Services
 {
     public class EmailService : IEmailService
     {
-        private readonly IConfiguration _configuration;
-
-        public EmailService(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
-
         public bool SendEmailToConfirmAccount(string[] recipients, string subject, int userId, string activationCode)
         {
             var message = new Message(subject, recipients, userId, activationCode);
@@ -37,7 +30,7 @@ namespace UserControl.Services
                 try
                 {
                     client.Connect(Environment.GetEnvironmentVariable("SmtpServer"),
-                        int.Parse(Environment.GetEnvironmentVariable("Port")), true);
+                        int.Parse(Environment.GetEnvironmentVariable("Port_Email")), true);
                     client.AuthenticationMechanisms.Remove("XOUATH2");
                     client.Authenticate(Environment.GetEnvironmentVariable("From"),
                         Environment.GetEnvironmentVariable("Password"));

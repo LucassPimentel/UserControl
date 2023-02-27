@@ -12,7 +12,6 @@ namespace UserControl.Services
     {
         private SignInManager<CustomIdentityUser> _signInManager;
         private ITokenService _tokenService;
-        private IServer server;
 
         public LoginService(SignInManager<CustomIdentityUser> signInManager, ITokenService tokenService)
         {
@@ -23,8 +22,6 @@ namespace UserControl.Services
         public Result LoginUser(LoginRequest loginRequest)
         {
             var requestResult = _signInManager.PasswordSignInAsync(loginRequest.Username, loginRequest.Password, false, false);
-
-            Console.WriteLine(loginRequest);
 
             if (requestResult.Result.Succeeded)
             {

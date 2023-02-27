@@ -8341,11 +8341,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lupdsilva\\OneDrive - Simpress\\Área de Trabalho\\TestandoDeployUserControl\\UserControl.csproj",
+      "projectUniqueName": "C:\\Users\\lupdsilva\\OneDrive - Simpress\\Área de Trabalho\\UserControl\\UserControl.csproj",
       "projectName": "UserControl",
-      "projectPath": "C:\\Users\\lupdsilva\\OneDrive - Simpress\\Área de Trabalho\\TestandoDeployUserControl\\UserControl.csproj",
+      "projectPath": "C:\\Users\\lupdsilva\\OneDrive - Simpress\\Área de Trabalho\\UserControl\\UserControl.csproj",
       "packagesPath": "C:\\Users\\lupdsilva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lupdsilva\\OneDrive - Simpress\\Área de Trabalho\\TestandoDeployUserControl\\obj\\",
+      "outputPath": "C:\\Users\\lupdsilva\\OneDrive - Simpress\\Área de Trabalho\\UserControl\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lupdsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
